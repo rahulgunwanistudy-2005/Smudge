@@ -1,62 +1,17 @@
-# Design direction — "forensic light table, night shift"
+# Smudge design direction
 
-Written before any screen was built. Every screen is checked against this page.
+Written before the screens, revised 2026-10-26 UTC.
 
-## Reference and how we use it
-The builder chose the Dribbble shot **"Vizo — Neuro-Optical Health Scan UI"** (Jack R. / RonDesignLab) as the aesthetic reference: a dark instrument-grade health app, a glowing green scan of the user's face as the dashboard hero, dense but calm readouts.
+Reference: Jack R. / RonDesignLab, [Vizo Mobile App](https://dribbble.com/shots/27507443-Vizo-Mobile-App-Neuro-Optical-Health-Scan-UI). Its published palette includes forest #051A13, green #1E4B30 and pale #D8E4DF. Use the biometric instrument feel, with an original thumbprint instead of a face and a task-focused Smudge layout.
 
-We take the *language*, not the layout:
+Concept: a personal fingerprint privacy instrument. A spacious pale-mint workspace surrounds a deep-forest scanner. The custom luminous thumbprint is the defining visual. Desktop: narrow forest navigation, an asymmetric scan workspace, quiet action/evidence panels. Mobile: scan first, bottom navigation. Left-aligned copy; centred scan artwork.
 
-| Vizo does | Smudge does instead |
-|---|---|
-| Green wireframe **face** scan on the dashboard | Green ridge-flow **thumbprint** scan: concentric ridge lines drawn from a real orientation field, a sweeping scan line, minutiae glyphs blooming in |
-| Health scores ("neuro-optical index") | Cloneability score 0–100 with a tier, and the matcher dial with its calibrated threshold line |
-| Biometric trend charts | Lab charts: cloneability vs capture distance, match score before/after per attacker |
-| "Scan complete" state | "Neutralised — a fingerprint matcher no longer accepts this print" |
+Palette: canvas #EAF0EB; paper #F7F9F5; forest #102C23; muted #526A5D; mint #B9F39B; risk #BA4A30. Green means scan activity/treatment. Terracotta only signals warnings. The primary light theme has a separate dark theme with #0C1C16 canvas and #162B22 panels.
 
-The thumbprint hero is not decoration: on the home screen it previews exactly what the scan screen will do to the user's own photo.
+Type: self-hosted Manrope variable for interface and statements; IBM Plex Mono for measurements only. Scale 12/14/16/20/28/40/56px. Comfortable line lengths, sentence case. One large rounded scan panel, smaller utility surfaces and quiet separators. Avoid the interchangeable metric-card grid.
 
-## Concept
-An evidence lab at night. Near-black surfaces, instruments glowing softly, one green that means "the instrument is looking", one red-orange that means "this is exposed". Numbers are always in mono, always with units.
+Hero: original ornamental SVG ridge artwork, never represented as an extracted print. Real uploads show actual NBIS minutiae. Only user-triggered scan/progress motion. Reduced-motion removes animation.
 
-## Colour tokens
-Dark is the primary theme (like the reference). Light is designed separately ("paper light table"), not inverted.
+Plan review: replaces the scaffold neon-black default with softer forest and mint from the user's reference. No fake scan history, protection scores, or user counts. Displayed measurements are computed; synthetic evidence is explicitly labelled.
 
-| Token | Dark | Light | Use |
-|---|---|---|---|
-| `--bg` | `#050706` | `#ECEEE8` | page |
-| `--surface` | `#0C100E` | `#F7F8F4` | panels |
-| `--card` | `#121815` | `#FFFFFF` | cards |
-| `--raised` | `#1A221E` | `#E3E6DE` | chips, inputs |
-| `--line` | `#25302A` | `#CDD3C8` | hairlines |
-| `--fg` | `#E8EEE9` | `#0B0E0C` | text |
-| `--fg-dim` | `#9BA69F` | `#4A544E` | secondary text (≥ 4.5:1 on card) |
-| `--scan` | `#C6F24E` | `#C6F24E` (fill) / `#3B6A00` (text) | the instrument: scan lines, focus ring, "neutralised" |
-| `--risk` | `#FF5A36` | `#C2361A` | **only** exposed ridges, minutiae, "High/Critical" |
-| `--warn` | `#F2B84B` | `#8A5A00` | "Low" tier, partial results |
-
-Rules: `--risk` is never used for buttons, links or decoration. `--scan` never appears on an exposed print. Tier is always text + icon + colour.
-
-## Type
-- **Display:** Bricolage Grotesque (variable, self-hosted, Latin subset) — statements and big numbers in headings. Tight tracking, optical size high.
-- **Mono:** JetBrains Mono (self-hosted, Latin subset) — every number, unit, code, label in caps.
-- Scale (rem): 0.75 / 0.875 / 1 / 1.25 / 1.625 / 2.25 / 3.25. Labels: 0.75 mono, uppercase, +0.08em tracking.
-- `font-display: swap`. No CDN fonts.
-
-## Shape and layout
-- Cards: radius 24 px, 1 px `--line` border, no drop shadows; depth comes from surface steps.
-- Pills and segmented controls: radius 999 px.
-- Mobile-first at 360 px. One column, 16 px gutters. A bottom tab bar (Scan · Documents · Proof · Lab) on mobile; a left rail on ≥ 1024 px.
-- The scan viewport is a circle-in-square instrument: concentric range rings, tick marks every 6°, a mono readout in the corners.
-
-## Motion (meaning only)
-1. **Bloom** — ridge lines draw along the orientation field (600 ms), then minutiae pop in staggered (12 ms each). Means: "we found these."
-2. **Sweep** — a single green scan line passes over a print while Smudge runs; glyphs it crosses dissolve. Means: "we are erasing these."
-3. **Needle** — the matcher dial needle eases from the before score to the after score. Means: "the attack now fails."
-Nothing else moves. `prefers-reduced-motion`: bloom and sweep become a static overlay; the needle jumps.
-
-## Banned
-Purple-blue gradients · glassmorphism/frosted cards · emoji icons · stock 3D blobs · "Revolutionize your…" copy · centred hero with three feature cards · lorem ipsum · fake testimonials or user counts · colour as the only signal · decorative motion.
-
-## Copy voice
-Calm, specific, honest. Grade 6–8. Never "100% safe". Say "a fingerprint matcher no longer accepts this print." Always say when something is simulated.
+Banned: copied face scans, stock medical imagery, purple gradients, glass cards, fake scientific claims, safety guarantees, colour-only states. 44px targets, visible keyboard focus, a keyboard-operable comparison slider, announced results, and responsive layout down to 360px.

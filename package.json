@@ -1,0 +1,12 @@
+{
+  "name": "smudge", "private": true, "version": "1.0.0", "type": "module",
+  "workspaces": ["app"],
+  "scripts": {
+    "dev": "npm run dev -w app -- --host 127.0.0.1", "build": "npm run build -w app",
+    "preview": "node scripts/serve.mjs", "check": "npm run check -w app", "test": "vitest run",
+    "test:e2e": "python3 tests/e2e.py", "assets": "node scripts/prepare-assets.mjs",
+    "build:wasm": "python3 scripts/build-engine.py --wasm", "build:native": "python3 scripts/build-engine.py",
+    "eval": "python3 lab/eval/run.py", "verify": "npm run check && npm test && npm run build"
+  },
+  "devDependencies": {"vitest": "^3.2.4", "typescript": "~5.9.3", "@types/node": "^24.0.0"}
+}
