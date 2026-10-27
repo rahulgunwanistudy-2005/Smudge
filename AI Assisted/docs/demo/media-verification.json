@@ -1,0 +1,22 @@
+{
+  "programs": [],
+  "stream_groups": [],
+  "streams": [
+    {
+      "codec_name": "h264",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "codec_name": "aac"
+    }
+  ],
+  "format": {
+    "duration": "133.760000"
+  },
+  "sha256": "daed7b1c5b6c0bc597a9a51249cd7d52b5d577d8b524e0630520a5928491e083",
+  "bytes": 3146432,
+  "synthetic": true,
+  "editing": "Actual offline processing recording. The privacy segment includes a labelled still of the live deployment\u2019s online header inspection; no matcher measurements are replaced. Captions burned in; local macOS narration.",
+  "runtimeBudgetClaim": false
+}

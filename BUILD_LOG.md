@@ -35,3 +35,12 @@ Times are UTC. Each entry says what happened, what was decided, and what is stil
 - Browser checks pass exact JPEG re-test, coordinate-free JSON, fresh metadata-free download, full offline reload, local hand detector, no-reference analysis, multipage PDF and positive OCR. Automated accessibility found an invalid label on a generic span; corrected to an image role and rerunning.
 - User authorized Render My Workspace. Static creation API cannot configure privacy headers, so deploy a free static-file-only Node server with headers (no upload/processing API). No Vercel credentials were available; login flow cancelled.
 - Initial JavaScript dependency closure is about46KB gzip, below150KiB. Real-phone speed and human efficacy targets remain unmeasured.
+
+### 2026-10-27 02:53 UTC — release
+
+- Main is pushed and the free Render service is live at https://smudge-privacy.onrender.com . Actual HEAD responses deliver Connection-Allowlist, hash-based CSP, COOP/COEP and privacy headers. The attempted repository default-branch change was not permitted by GitHub; main remains the working/deployed branch and source links target main explicitly.
+- Fixed clean-install esbuild dependency; CI passed on d240a9b. Rebuilt/checks pass for final source and hosted browser checks pass after optimization: offline processing, exact JPEG, no-reference, PDF, OCR, downloads, mobile and dark theme; zero external requests, zero page errors, zero automated accessibility violations.
+- Added actual learned ESPCN4x attacker tests: both independent matchers accept0/96 after variants on12 synthetic textures. Graph licence/hash are committed. Human efficacy remains unvalidated.
+- Moved ornamental SVG out of inline HTML, generated tiny WebP thumbnails and precompressed delivery. Lighthouse13.5 mobile simulation records98 Performance /100 Accessibility /100 Best Practices; this does not measure real phones or scan latency.
+- Recorded a133.76-second1920x1080 synthetic demonstration with small captions, local narration and a labelled live-header still. Media verification metadata and public /demo/ watch page included; video excluded from offline asset prefetch.
+- Human consented validation, trained NFIQ/FMR calibration, real-device testing and final Devpost submission remain explicit open items. No result, human review or competition eligibility is fabricated.

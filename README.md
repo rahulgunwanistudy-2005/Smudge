@@ -2,6 +2,10 @@
 
 **You can change a password. You can’t change your fingerprint.**
 
+[Open the live app](https://smudge-privacy.onrender.com) · [Watch the recorded demo](https://smudge-privacy.onrender.com/demo/) · [Browse the main branch](https://github.com/rahulgunwanistudy-2005/Smudge/tree/main)
+
+The free demo host may take time to wake after inactivity.
+
 Smudge finds fingerprint detail in selected photo regions, suppresses ridge patterns, and tests the **exact exported JPEG** with a real NIST fingerprint matcher. Photos are processed on-device. No upload account or inference service is used.
 
 ![Smudge workbench](AI%20Assisted/docs/screenshots/dashboard.png)

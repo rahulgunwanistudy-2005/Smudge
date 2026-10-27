@@ -5,6 +5,8 @@
 - [x] Build, tests, parity fixtures, synthetic measurements and setup instructions.
 - [x] Defensive limitations and provisional threshold visible.
 - [x] Screenshot capture script and submission text.
+- [x] Public Render demo with actual response headers and passing hosted browser checks.
+- [x] Recorded1080p demonstration with captions and local narration, hosted at /demo/.
 - [ ] Consented real human dataset and human efficacy / distance / perceptual validation.
 - [ ] Real Android/iOS tests and measured device budgets.
 - [ ] Human validation against learned super-resolution, trained NFIQ, human FMR calibration.

@@ -1,6 +1,6 @@
 {
   "schema": "smudge-report/1",
-  "createdAt": "2026-10-27T02:23:20.767Z",
+  "createdAt": "2026-10-27T02:52:37.314Z",
   "synthetic": true,
   "engine": "NBIS mindtct + Bozorth3 \u00b7 smudge-core 1.0",
   "width": 1000,
@@ -95,12 +95,12 @@
   ],
   "ssim": 0.9618966643497026,
   "psnr": 29.447559497296645,
-  "elapsedMs": 52669.965000003576,
+  "elapsedMs": 29742.769999995828,
   "metadata": "Original metadata discarded during fresh canvas encoding; export is re-encoded as JPEG.",
   "limitations": [
     "Threshold 40 is provisional; no human FMR calibration.",
     "NFIQ-style grade is a heuristic, not trained NFIQ.",
-    "SourceAFIS validation covers synthetic lab textures only. No human or learned super-resolution validation.",
+    "SourceAFIS and learned ESPCN4x tests cover synthetic lab textures only. No human validation.",
     "Only selected regions are processed; automatic detection can miss fingertips.",
     "Same-image matching, when selected, is a diagnostic, not independent identity verification.",
     "SSIM and PSNR measure the exact exported JPEG. JPEG recompression changes pixels outside the mask."
@@ -109,7 +109,7 @@
   "privacy": {
     "observedExternalRequests": 0,
     "headers": {
-      "content-security-policy": "default-src 'self'; worker-src 'self' blob:; connect-src 'self'; img-src 'self' blob: data:; object-src 'none'; script-src 'self' 'wasm-unsafe-eval' 'sha256-X23+xIPd/CW15Q7OlzzWzqdlsvD6GYQiCBYfijtW/mE='; style-src 'self' 'unsafe-inline'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'",
+      "content-security-policy": "default-src 'self'; worker-src 'self' blob:; connect-src 'self'; img-src 'self' blob: data:; object-src 'none'; script-src 'self' 'wasm-unsafe-eval' 'sha256-KU6SC+78lL4ufchkH1N57vwQ/fEeo/01NFJC6OKMAmI='; style-src 'self' 'unsafe-inline'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'",
       "connection-allowlist": "(response-origin)",
       "cross-origin-opener-policy": "same-origin",
       "cross-origin-embedder-policy": "require-corp",

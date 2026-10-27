@@ -1,0 +1,49 @@
+{
+  "duration": 133.73962987499544,
+  "scenes": [
+    {
+      "start": 5.6541990488767624e-05,
+      "end": 10.250116750001325,
+      "text": "Your fingerprint. Yours to keep. Smudge explores sharing photos with less biometric detail. This demonstration uses a synthetic specimen, not a person\u2019s fingerprint.",
+      "speechDuration": 10.220816
+    },
+    {
+      "start": 10.250129791995278,
+      "end": 27.70071641699178,
+      "text": "The browser network is now disabled. Actual NIST extraction finds these ridge points. This synthetic example compares an image with itself. A real identity comparison needs a separate close up of the same finger.",
+      "speechDuration": 12.469569
+    },
+    {
+      "start": 27.70073083299212,
+      "end": 72.98846941698866,
+      "text": "Smudge suppresses ridge detail and re-tests enhancement, sharpening, upscaling, and JPEG variants at increasing strengths. Strong treatment changes close ups visibly. Finally it reopens the exact downloaded JPEG, runs the matcher again, and measures that file. These are real computations with the network disabled.",
+      "speechDuration": 19.483583
+    },
+    {
+      "start": 72.98848583298968,
+      "end": 89.20547387500119,
+      "text": "The privacy drawer shows actual response policies and observed external resources. Your photo is never uploaded. This counter is an audit aid, not a claim about every browser or operating system connection. The full scan and export just ran offline.",
+      "speechDuration": 14.930884
+    },
+    {
+      "start": 89.20549599999504,
+      "end": 109.84527549998893,
+      "text": "The lab publishes reproducible synthetic measurements for two independent matchers, including a learned four times upscaler. Fifty native and browser fixtures agree. These are synthetic diagnostics, not calibrated protection for human fingerprints.",
+      "speechDuration": 14.663855
+    },
+    {
+      "start": 109.84529425000073,
+      "end": 124.4116129999893,
+      "text": "Document mode opens scans and PDF pages, with optional local identifier checks. Review every suggested mask. Human validation, capture distance studies, and real phone measurements remain open.",
+      "speechDuration": 12.55619
+    },
+    {
+      "start": 124.41162812498806,
+      "end": 133.73959837498842,
+      "text": "A fingerprint is not a password. Smudge is a working defensive prototype, with inspectable evidence and clear limits. You can choose to share less of your identity.",
+      "speechDuration": 9.238231
+    }
+  ],
+  "synthetic": true,
+  "narration": "Local macOS system voice"
+}

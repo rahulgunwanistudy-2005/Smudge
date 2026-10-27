@@ -1,0 +1,12 @@
+{
+  "provider": "Render",
+  "workspace": "My Workspace",
+  "workspaceId": "tea-d6apn7i4d50c73c7nm6g",
+  "serviceId": "srv-dbg0hcqfngtc738ab14g",
+  "url": "https://smudge-privacy.onrender.com",
+  "branch": "main",
+  "plan": "free",
+  "runtime": "node",
+  "region": "singapore",
+  "purpose": "Static files with response privacy headers; no image upload API"
+}
