@@ -44,3 +44,5 @@ Times are UTC. Each entry says what happened, what was decided, and what is stil
 - Moved ornamental SVG out of inline HTML, generated tiny WebP thumbnails and precompressed delivery. Lighthouse13.5 mobile simulation records98 Performance /100 Accessibility /100 Best Practices; this does not measure real phones or scan latency.
 - Recorded a133.76-second1920x1080 synthetic demonstration with small captions, local narration and a labelled live-header still. Media verification metadata and public /demo/ watch page included; video excluded from offline asset prefetch.
 - Human consented validation, trained NFIQ/FMR calibration, real-device testing and final Devpost submission remain explicit open items. No result, human review or competition eligibility is fabricated.
+
+- Final application and /demo/ deployment837dce0 verified live: watch page200 and MP4 range streaming206. The latest CI job passed compilation, checks, parity and bundle budget, but its broad system-dependency installer stalled. Restricted CI installation to the headless browser used by tests on the already provisioned Ubuntu runner; hosted functional tests remain passed independently.

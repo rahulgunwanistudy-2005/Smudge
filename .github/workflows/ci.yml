@@ -23,7 +23,9 @@ jobs:
       - run: npm run check && npm test
       - run: npm run build
       - run: npm run budget
-      - run: python -m playwright install --with-deps chromium
+      - name: Install the headless test browser
+        timeout-minutes: 4
+        run: python -m playwright install chromium --only-shell
       - run: python 'AI Assisted/tests/run_release.py'
       - uses: actions/upload-artifact@v4
         if: always()
