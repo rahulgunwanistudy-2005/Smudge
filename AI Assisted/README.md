@@ -1,3 +1,3 @@
 # AI Assisted
 
-Implementation, tests, assets, evaluation tooling, and documentation written or edited by the coding assistant are indexed in `/AI_USAGE.md`. Source remains in monorepo directories so the project builds normally. This category does not claim human review has occurred. Dependencies are separately credited in `docs/credits.md`.
+The complete implementation lives here: `app/`, `engine/`, `lab/`, `docs/`, `scripts/` and `tests/`. Run the root npm commands from the repository root. See `/AI_USAGE.md` for the work ledger. These files were written or adapted by the coding assistant from the human builder's brief. No human review is asserted. Third-party code and models keep their own notices.

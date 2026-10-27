@@ -25,3 +25,13 @@ Times are UTC. Each entry says what happened, what was decided, and what is stil
 - First browser scan and treatment succeeds without console errors: specimen 7 same-image baseline 197, final plain score 0, sharpened score 3, other tested variants 0. This is a synthetic diagnostic, not human efficacy.
 - Upgraded dependencies to patched SvelteKit 3 / Vite 8 / Vitest 5 / PDF.js 6 after audit. All reported dependency vulnerabilities resolved at install.
 - Current limits: no consenting human captures, no human FMR calibration, no learned super-resolution model, no real-device performance or blind A/B test. These are shown in the UI.
+
+### 2026-10-27 02:12 UTC — workbench and release checks
+
+- Completed responsive forest/mint frontend with thumbprint artwork, region review/loupe, no-reference state, before/after, per-attacker evidence and actual-export JPEG re-test.
+- Added self-hosted MediaPipe, PDF.js, OCR, Verhoeff masking, PWA/cache/Share Target and actual-header privacy drawer. OCR passes pixel data directly, preserving connect-src self.
+- Organized all implementation under `AI Assisted/`; reserved `Hand Written/` for human-authored work. Root toolchain records mapped in AI_USAGE.md.
+- Added SourceAFIS3.18.1 independent synthetic experiment: both matchers accept12/12 baselines and0/84 post-treatment variants;0/66 synthetic impostors accepted at provisional40. No FMR calibration claim.
+- Browser checks pass exact JPEG re-test, coordinate-free JSON, fresh metadata-free download, full offline reload, local hand detector, no-reference analysis, multipage PDF and positive OCR. Automated accessibility found an invalid label on a generic span; corrected to an image role and rerunning.
+- User authorized Render My Workspace. Static creation API cannot configure privacy headers, so deploy a free static-file-only Node server with headers (no upload/processing API). No Vercel credentials were available; login flow cancelled.
+- Initial JavaScript dependency closure is about46KB gzip, below150KiB. Real-phone speed and human efficacy targets remain unmeasured.

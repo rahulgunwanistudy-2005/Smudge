@@ -1,0 +1,1430 @@
+{
+  "schema": "smudge-independent/1",
+  "dataset": "Procedural synthetic ridge textures, seeds 1\u201312",
+  "humanData": false,
+  "thresholdCalibrated": false,
+  "threshold": 40,
+  "method": "Strength 1; same-image baseline; distinct extractors. Lanczos retains a nominal 500 DPI in both matchers. No learned super-resolution.",
+  "sourceafis": {
+    "version": "3.18.1",
+    "summary": {
+      "baselineMatches": 12,
+      "baselinePairs": 12,
+      "attackerMatchesAfter": 0,
+      "attackerPairsAfter": 84,
+      "impostorMatches": 0,
+      "impostorPairs": 66
+    },
+    "scores": [
+      {
+        "pair": "1:before",
+        "score": 198.64435184859735
+      },
+      {
+        "pair": "1:after",
+        "score": 0.0
+      },
+      {
+        "pair": "1:sharpened",
+        "score": 0.0
+      },
+      {
+        "pair": "1:lanczos-2",
+        "score": 0.0
+      },
+      {
+        "pair": "1:lanczos-4",
+        "score": 0.0
+      },
+      {
+        "pair": "1:jpeg-60",
+        "score": 0.0
+      },
+      {
+        "pair": "1:jpeg-80",
+        "score": 0.0
+      },
+      {
+        "pair": "1:jpeg-95",
+        "score": 0.0
+      },
+      {
+        "pair": "1:impostor:2",
+        "score": 0.9946841061219471
+      },
+      {
+        "pair": "1:impostor:3",
+        "score": 4.271421914809022
+      },
+      {
+        "pair": "1:impostor:4",
+        "score": 1.372799438001539
+      },
+      {
+        "pair": "1:impostor:5",
+        "score": 2.8605028960046264
+      },
+      {
+        "pair": "1:impostor:6",
+        "score": 3.3090181692023712
+      },
+      {
+        "pair": "1:impostor:7",
+        "score": 0.6012875884086583
+      },
+      {
+        "pair": "1:impostor:8",
+        "score": 4.888554040265324
+      },
+      {
+        "pair": "1:impostor:9",
+        "score": 0.0
+      },
+      {
+        "pair": "1:impostor:10",
+        "score": 2.7120588897955393
+      },
+      {
+        "pair": "1:impostor:11",
+        "score": 3.903732128702786
+      },
+      {
+        "pair": "1:impostor:12",
+        "score": 0.0
+      },
+      {
+        "pair": "2:before",
+        "score": 186.98590369776346
+      },
+      {
+        "pair": "2:after",
+        "score": 0.0
+      },
+      {
+        "pair": "2:sharpened",
+        "score": 0.0
+      },
+      {
+        "pair": "2:lanczos-2",
+        "score": 0.0
+      },
+      {
+        "pair": "2:lanczos-4",
+        "score": 0.0
+      },
+      {
+        "pair": "2:jpeg-60",
+        "score": 0.0
+      },
+      {
+        "pair": "2:jpeg-80",
+        "score": 0.0
+      },
+      {
+        "pair": "2:jpeg-95",
+        "score": 0.0
+      },
+      {
+        "pair": "2:impostor:3",
+        "score": 5.76553991331539
+      },
+      {
+        "pair": "2:impostor:4",
+        "score": 10.88005818937562
+      },
+      {
+        "pair": "2:impostor:5",
+        "score": 3.2170319501161515
+      },
+      {
+        "pair": "2:impostor:6",
+        "score": 0.8830059191598489
+      },
+      {
+        "pair": "2:impostor:7",
+        "score": 4.665993264987606
+      },
+      {
+        "pair": "2:impostor:8",
+        "score": 1.2237218970945456
+      },
+      {
+        "pair": "2:impostor:9",
+        "score": 2.007216394066694
+      },
+      {
+        "pair": "2:impostor:10",
+        "score": 9.671392001657402
+      },
+      {
+        "pair": "2:impostor:11",
+        "score": 0.003206509013525312
+      },
+      {
+        "pair": "2:impostor:12",
+        "score": 2.931636299484678
+      },
+      {
+        "pair": "3:before",
+        "score": 186.98590369776346
+      },
+      {
+        "pair": "3:after",
+        "score": 0.0
+      },
+      {
+        "pair": "3:sharpened",
+        "score": 0.0
+      },
+      {
+        "pair": "3:lanczos-2",
+        "score": 0.0
+      },
+      {
+        "pair": "3:lanczos-4",
+        "score": 0.0
+      },
+      {
+        "pair": "3:jpeg-60",
+        "score": 0.0
+      },
+      {
+        "pair": "3:jpeg-80",
+        "score": 0.0
+      },
+      {
+        "pair": "3:jpeg-95",
+        "score": 0.0
+      },
+      {
+        "pair": "3:impostor:4",
+        "score": 0.20334220684765456
+      },
+      {
+        "pair": "3:impostor:5",
+        "score": 10.918948232755838
+      },
+      {
+        "pair": "3:impostor:6",
+        "score": 0.5208810629370884
+      },
+      {
+        "pair": "3:impostor:7",
+        "score": 3.900029921943014
+      },
+      {
+        "pair": "3:impostor:8",
+        "score": 0.13652356392326523
+      },
+      {
+        "pair": "3:impostor:9",
+        "score": 0.0
+      },
+      {
+        "pair": "3:impostor:10",
+        "score": 2.6504493165387855
+      },
+      {
+        "pair": "3:impostor:11",
+        "score": 4.540233918760716
+      },
+      {
+        "pair": "3:impostor:12",
+        "score": 0.31421402798388154
+      },
+      {
+        "pair": "4:before",
+        "score": 210.3027999994313
+      },
+      {
+        "pair": "4:after",
+        "score": 0.0
+      },
+      {
+        "pair": "4:sharpened",
+        "score": 0.0
+      },
+      {
+        "pair": "4:lanczos-2",
+        "score": 0.0
+      },
+      {
+        "pair": "4:lanczos-4",
+        "score": 0.0
+      },
+      {
+        "pair": "4:jpeg-60",
+        "score": 0.0
+      },
+      {
+        "pair": "4:jpeg-80",
+        "score": 0.0
+      },
+      {
+        "pair": "4:jpeg-95",
+        "score": 0.0
+      },
+      {
+        "pair": "4:impostor:5",
+        "score": 1.6215438495752919
+      },
+      {
+        "pair": "4:impostor:6",
+        "score": 0.0
+      },
+      {
+        "pair": "4:impostor:7",
+        "score": 5.402312803079021
+      },
+      {
+        "pair": "4:impostor:8",
+        "score": 0.2382771916905089
+      },
+      {
+        "pair": "4:impostor:9",
+        "score": 4.542002773149531
+      },
+      {
+        "pair": "4:impostor:10",
+        "score": 2.9676357444460058
+      },
+      {
+        "pair": "4:impostor:11",
+        "score": 4.01690006419235
+      },
+      {
+        "pair": "4:impostor:12",
+        "score": 2.0319877010496232
+      },
+      {
+        "pair": "5:before",
+        "score": 163.6690077578728
+      },
+      {
+        "pair": "5:after",
+        "score": 0.0
+      },
+      {
+        "pair": "5:sharpened",
+        "score": 0.0
+      },
+      {
+        "pair": "5:lanczos-2",
+        "score": 0.0
+      },
+      {
+        "pair": "5:lanczos-4",
+        "score": 0.0
+      },
+      {
+        "pair": "5:jpeg-60",
+        "score": 0.0
+      },
+      {
+        "pair": "5:jpeg-80",
+        "score": 0.0
+      },
+      {
+        "pair": "5:jpeg-95",
+        "score": 0.0
+      },
+      {
+        "pair": "5:impostor:6",
+        "score": 0.0
+      },
+      {
+        "pair": "5:impostor:7",
+        "score": 3.036186430691226
+      },
+      {
+        "pair": "5:impostor:8",
+        "score": 5.3146243889564015
+      },
+      {
+        "pair": "5:impostor:9",
+        "score": 0.0
+      },
+      {
+        "pair": "5:impostor:10",
+        "score": 1.6847458083521218
+      },
+      {
+        "pair": "5:impostor:11",
+        "score": 2.455881324801819
+      },
+      {
+        "pair": "5:impostor:12",
+        "score": 0.7568600506736682
+      },
+      {
+        "pair": "6:before",
+        "score": 128.69366294359375
+      },
+      {
+        "pair": "6:after",
+        "score": 0.0
+      },
+      {
+        "pair": "6:sharpened",
+        "score": 0.0
+      },
+      {
+        "pair": "6:lanczos-2",
+        "score": 0.0
+      },
+      {
+        "pair": "6:lanczos-4",
+        "score": 0.0
+      },
+      {
+        "pair": "6:jpeg-60",
+        "score": 0.0
+      },
+      {
+        "pair": "6:jpeg-80",
+        "score": 0.0
+      },
+      {
+        "pair": "6:jpeg-95",
+        "score": 0.0
+      },
+      {
+        "pair": "6:impostor:7",
+        "score": 3.6674723717654314
+      },
+      {
+        "pair": "6:impostor:8",
+        "score": 8.211391517067554
+      },
+      {
+        "pair": "6:impostor:9",
+        "score": 0.11736575511249742
+      },
+      {
+        "pair": "6:impostor:10",
+        "score": 0.27135536705072066
+      },
+      {
+        "pair": "6:impostor:11",
+        "score": 3.3426002145093965
+      },
+      {
+        "pair": "6:impostor:12",
+        "score": 1.6513111057502414
+      },
+      {
+        "pair": "7:before",
+        "score": 175.32745590870678
+      },
+      {
+        "pair": "7:after",
+        "score": 0.0
+      },
+      {
+        "pair": "7:sharpened",
+        "score": 0.0
+      },
+      {
+        "pair": "7:lanczos-2",
+        "score": 0.0
+      },
+      {
+        "pair": "7:lanczos-4",
+        "score": 0.0
+      },
+      {
+        "pair": "7:jpeg-60",
+        "score": 0.0
+      },
+      {
+        "pair": "7:jpeg-80",
+        "score": 0.0
+      },
+      {
+        "pair": "7:jpeg-95",
+        "score": 0.0
+      },
+      {
+        "pair": "7:impostor:8",
+        "score": 4.507305977493447
+      },
+      {
+        "pair": "7:impostor:9",
+        "score": 0.008517593349311917
+      },
+      {
+        "pair": "7:impostor:10",
+        "score": 1.4552812811526858
+      },
+      {
+        "pair": "7:impostor:11",
+        "score": 2.3868734655495176
+      },
+      {
+        "pair": "7:impostor:12",
+        "score": 1.0605315820677772
+      },
+      {
+        "pair": "8:before",
+        "score": 210.3027999994313
+      },
+      {
+        "pair": "8:after",
+        "score": 0.0
+      },
+      {
+        "pair": "8:sharpened",
+        "score": 0.0
+      },
+      {
+        "pair": "8:lanczos-2",
+        "score": 0.0
+      },
+      {
+        "pair": "8:lanczos-4",
+        "score": 0.0
+      },
+      {
+        "pair": "8:jpeg-60",
+        "score": 0.0
+      },
+      {
+        "pair": "8:jpeg-80",
+        "score": 0.0
+      },
+      {
+        "pair": "8:jpeg-95",
+        "score": 0.0
+      },
+      {
+        "pair": "8:impostor:9",
+        "score": 0.5799407250378422
+      },
+      {
+        "pair": "8:impostor:10",
+        "score": 0.8092822148540855
+      },
+      {
+        "pair": "8:impostor:11",
+        "score": 0.4339811429963699
+      },
+      {
+        "pair": "8:impostor:12",
+        "score": 0.6702938529008075
+      },
+      {
+        "pair": "9:before",
+        "score": 175.32745590870678
+      },
+      {
+        "pair": "9:after",
+        "score": 0.0
+      },
+      {
+        "pair": "9:sharpened",
+        "score": 0.0
+      },
+      {
+        "pair": "9:lanczos-2",
+        "score": 0.0
+      },
+      {
+        "pair": "9:lanczos-4",
+        "score": 0.0
+      },
+      {
+        "pair": "9:jpeg-60",
+        "score": 0.0
+      },
+      {
+        "pair": "9:jpeg-80",
+        "score": 0.0
+      },
+      {
+        "pair": "9:jpeg-95",
+        "score": 0.0
+      },
+      {
+        "pair": "9:impostor:10",
+        "score": 0.538939656134133
+      },
+      {
+        "pair": "9:impostor:11",
+        "score": 0.0
+      },
+      {
+        "pair": "9:impostor:12",
+        "score": 0.0
+      },
+      {
+        "pair": "10:before",
+        "score": 198.64435184859735
+      },
+      {
+        "pair": "10:after",
+        "score": 0.0
+      },
+      {
+        "pair": "10:sharpened",
+        "score": 0.0
+      },
+      {
+        "pair": "10:lanczos-2",
+        "score": 0.0
+      },
+      {
+        "pair": "10:lanczos-4",
+        "score": 0.0
+      },
+      {
+        "pair": "10:jpeg-60",
+        "score": 0.0
+      },
+      {
+        "pair": "10:jpeg-80",
+        "score": 0.0
+      },
+      {
+        "pair": "10:jpeg-95",
+        "score": 0.0
+      },
+      {
+        "pair": "10:impostor:11",
+        "score": 3.3279952653965323
+      },
+      {
+        "pair": "10:impostor:12",
+        "score": 3.6521770355104657
+      },
+      {
+        "pair": "11:before",
+        "score": 210.3027999994313
+      },
+      {
+        "pair": "11:after",
+        "score": 0.0
+      },
+      {
+        "pair": "11:sharpened",
+        "score": 0.0
+      },
+      {
+        "pair": "11:lanczos-2",
+        "score": 0.0
+      },
+      {
+        "pair": "11:lanczos-4",
+        "score": 0.0
+      },
+      {
+        "pair": "11:jpeg-60",
+        "score": 0.0
+      },
+      {
+        "pair": "11:jpeg-80",
+        "score": 0.0
+      },
+      {
+        "pair": "11:jpeg-95",
+        "score": 0.0
+      },
+      {
+        "pair": "11:impostor:12",
+        "score": 1.6314275270477352
+      },
+      {
+        "pair": "12:before",
+        "score": 163.6690077578728
+      },
+      {
+        "pair": "12:after",
+        "score": 0.0
+      },
+      {
+        "pair": "12:sharpened",
+        "score": 0.0
+      },
+      {
+        "pair": "12:lanczos-2",
+        "score": 0.0
+      },
+      {
+        "pair": "12:lanczos-4",
+        "score": 0.0
+      },
+      {
+        "pair": "12:jpeg-60",
+        "score": 0.0
+      },
+      {
+        "pair": "12:jpeg-80",
+        "score": 0.0
+      },
+      {
+        "pair": "12:jpeg-95",
+        "score": 0.0
+      }
+    ]
+  },
+  "bozorth3": {
+    "summary": {
+      "baselineMatches": 12,
+      "baselinePairs": 12,
+      "attackerMatchesAfter": 0,
+      "attackerPairsAfter": 84,
+      "impostorMatches": 0,
+      "impostorPairs": 66
+    },
+    "scores": [
+      {
+        "pair": "1:before",
+        "score": 305,
+        "highQuality": 14
+      },
+      {
+        "pair": "1:after",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "1:sharpened",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "1:lanczos-2",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "1:lanczos-4",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "1:jpeg-60",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "1:jpeg-80",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "1:jpeg-95",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "1:impostor:2",
+        "score": 6
+      },
+      {
+        "pair": "1:impostor:3",
+        "score": 8
+      },
+      {
+        "pair": "1:impostor:4",
+        "score": 12
+      },
+      {
+        "pair": "1:impostor:5",
+        "score": 10
+      },
+      {
+        "pair": "1:impostor:6",
+        "score": 16
+      },
+      {
+        "pair": "1:impostor:7",
+        "score": 11
+      },
+      {
+        "pair": "1:impostor:8",
+        "score": 18
+      },
+      {
+        "pair": "1:impostor:9",
+        "score": 12
+      },
+      {
+        "pair": "1:impostor:10",
+        "score": 8
+      },
+      {
+        "pair": "1:impostor:11",
+        "score": 12
+      },
+      {
+        "pair": "1:impostor:12",
+        "score": 10
+      },
+      {
+        "pair": "2:before",
+        "score": 207,
+        "highQuality": 12
+      },
+      {
+        "pair": "2:after",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "2:sharpened",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "2:lanczos-2",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "2:lanczos-4",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "2:jpeg-60",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "2:jpeg-80",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "2:jpeg-95",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "2:impostor:3",
+        "score": 8
+      },
+      {
+        "pair": "2:impostor:4",
+        "score": 18
+      },
+      {
+        "pair": "2:impostor:5",
+        "score": 13
+      },
+      {
+        "pair": "2:impostor:6",
+        "score": 5
+      },
+      {
+        "pair": "2:impostor:7",
+        "score": 12
+      },
+      {
+        "pair": "2:impostor:8",
+        "score": 7
+      },
+      {
+        "pair": "2:impostor:9",
+        "score": 13
+      },
+      {
+        "pair": "2:impostor:10",
+        "score": 6
+      },
+      {
+        "pair": "2:impostor:11",
+        "score": 8
+      },
+      {
+        "pair": "2:impostor:12",
+        "score": 9
+      },
+      {
+        "pair": "3:before",
+        "score": 367,
+        "highQuality": 15
+      },
+      {
+        "pair": "3:after",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "3:sharpened",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "3:lanczos-2",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "3:lanczos-4",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "3:jpeg-60",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "3:jpeg-80",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "3:jpeg-95",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "3:impostor:4",
+        "score": 11
+      },
+      {
+        "pair": "3:impostor:5",
+        "score": 13
+      },
+      {
+        "pair": "3:impostor:6",
+        "score": 11
+      },
+      {
+        "pair": "3:impostor:7",
+        "score": 6
+      },
+      {
+        "pair": "3:impostor:8",
+        "score": 20
+      },
+      {
+        "pair": "3:impostor:9",
+        "score": 14
+      },
+      {
+        "pair": "3:impostor:10",
+        "score": 4
+      },
+      {
+        "pair": "3:impostor:11",
+        "score": 21
+      },
+      {
+        "pair": "3:impostor:12",
+        "score": 6
+      },
+      {
+        "pair": "4:before",
+        "score": 391,
+        "highQuality": 23
+      },
+      {
+        "pair": "4:after",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "4:sharpened",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "4:lanczos-2",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "4:lanczos-4",
+        "score": 3,
+        "highQuality": 0
+      },
+      {
+        "pair": "4:jpeg-60",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "4:jpeg-80",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "4:jpeg-95",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "4:impostor:5",
+        "score": 10
+      },
+      {
+        "pair": "4:impostor:6",
+        "score": 13
+      },
+      {
+        "pair": "4:impostor:7",
+        "score": 15
+      },
+      {
+        "pair": "4:impostor:8",
+        "score": 10
+      },
+      {
+        "pair": "4:impostor:9",
+        "score": 15
+      },
+      {
+        "pair": "4:impostor:10",
+        "score": 12
+      },
+      {
+        "pair": "4:impostor:11",
+        "score": 13
+      },
+      {
+        "pair": "4:impostor:12",
+        "score": 21
+      },
+      {
+        "pair": "5:before",
+        "score": 346,
+        "highQuality": 12
+      },
+      {
+        "pair": "5:after",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "5:sharpened",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "5:lanczos-2",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "5:lanczos-4",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "5:jpeg-60",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "5:jpeg-80",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "5:jpeg-95",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "5:impostor:6",
+        "score": 12
+      },
+      {
+        "pair": "5:impostor:7",
+        "score": 8
+      },
+      {
+        "pair": "5:impostor:8",
+        "score": 22
+      },
+      {
+        "pair": "5:impostor:9",
+        "score": 10
+      },
+      {
+        "pair": "5:impostor:10",
+        "score": 4
+      },
+      {
+        "pair": "5:impostor:11",
+        "score": 9
+      },
+      {
+        "pair": "5:impostor:12",
+        "score": 12
+      },
+      {
+        "pair": "6:before",
+        "score": 210,
+        "highQuality": 15
+      },
+      {
+        "pair": "6:after",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "6:sharpened",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "6:lanczos-2",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "6:lanczos-4",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "6:jpeg-60",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "6:jpeg-80",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "6:jpeg-95",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "6:impostor:7",
+        "score": 8
+      },
+      {
+        "pair": "6:impostor:8",
+        "score": 19
+      },
+      {
+        "pair": "6:impostor:9",
+        "score": 8
+      },
+      {
+        "pair": "6:impostor:10",
+        "score": 7
+      },
+      {
+        "pair": "6:impostor:11",
+        "score": 16
+      },
+      {
+        "pair": "6:impostor:12",
+        "score": 8
+      },
+      {
+        "pair": "7:before",
+        "score": 197,
+        "highQuality": 16
+      },
+      {
+        "pair": "7:after",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "7:sharpened",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "7:lanczos-2",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "7:lanczos-4",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "7:jpeg-60",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "7:jpeg-80",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "7:jpeg-95",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "7:impostor:8",
+        "score": 10
+      },
+      {
+        "pair": "7:impostor:9",
+        "score": 9
+      },
+      {
+        "pair": "7:impostor:10",
+        "score": 8
+      },
+      {
+        "pair": "7:impostor:11",
+        "score": 18
+      },
+      {
+        "pair": "7:impostor:12",
+        "score": 16
+      },
+      {
+        "pair": "8:before",
+        "score": 358,
+        "highQuality": 15
+      },
+      {
+        "pair": "8:after",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "8:sharpened",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "8:lanczos-2",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "8:lanczos-4",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "8:jpeg-60",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "8:jpeg-80",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "8:jpeg-95",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "8:impostor:9",
+        "score": 15
+      },
+      {
+        "pair": "8:impostor:10",
+        "score": 10
+      },
+      {
+        "pair": "8:impostor:11",
+        "score": 7
+      },
+      {
+        "pair": "8:impostor:12",
+        "score": 7
+      },
+      {
+        "pair": "9:before",
+        "score": 430,
+        "highQuality": 16
+      },
+      {
+        "pair": "9:after",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "9:sharpened",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "9:lanczos-2",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "9:lanczos-4",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "9:jpeg-60",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "9:jpeg-80",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "9:jpeg-95",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "9:impostor:10",
+        "score": 22
+      },
+      {
+        "pair": "9:impostor:11",
+        "score": 17
+      },
+      {
+        "pair": "9:impostor:12",
+        "score": 6
+      },
+      {
+        "pair": "10:before",
+        "score": 194,
+        "highQuality": 16
+      },
+      {
+        "pair": "10:after",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "10:sharpened",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "10:lanczos-2",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "10:lanczos-4",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "10:jpeg-60",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "10:jpeg-80",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "10:jpeg-95",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "10:impostor:11",
+        "score": 13
+      },
+      {
+        "pair": "10:impostor:12",
+        "score": 20
+      },
+      {
+        "pair": "11:before",
+        "score": 241,
+        "highQuality": 13
+      },
+      {
+        "pair": "11:after",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "11:sharpened",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "11:lanczos-2",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "11:lanczos-4",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "11:jpeg-60",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "11:jpeg-80",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "11:jpeg-95",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "11:impostor:12",
+        "score": 15
+      },
+      {
+        "pair": "12:before",
+        "score": 273,
+        "highQuality": 18
+      },
+      {
+        "pair": "12:after",
+        "score": 0,
+        "highQuality": 1
+      },
+      {
+        "pair": "12:sharpened",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "12:lanczos-2",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "12:lanczos-4",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "12:jpeg-60",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "12:jpeg-80",
+        "score": 0,
+        "highQuality": 0
+      },
+      {
+        "pair": "12:jpeg-95",
+        "score": 0,
+        "highQuality": 0
+      }
+    ]
+  },
+  "limitations": [
+    "66 synthetic impostor pairs are far too few to calibrate FMR 0.1%.",
+    "Both matchers are tested; this remains synthetic evidence, not protection for humans.",
+    "This fixed-strength lab experiment differs from the browser closed loop and exact full-photo JPEG export."
+  ]
+}

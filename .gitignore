@@ -8,13 +8,13 @@ dist/
 __pycache__/
 *.pyc
 .venv/
-lab/data/raw/
-lab/data/consent/
-lab/data/cache/
-lab/matchers/sourceafis/*.jar
-lab/matchers/sourceafis/lib/
-lab/matchers/sourceafis/*.class
-engine/native/build/
+**/lab/data/raw/
+**/lab/data/consent/
+**/lab/data/cache/
+**/lab/matchers/sourceafis/*.jar
+**/lab/matchers/sourceafis/lib/
+**/lab/matchers/sourceafis/*.class
+**/engine/native/build/
 test-results/
 playwright-report/
 .lighthouseci/
@@ -22,4 +22,4 @@ playwright-report/
 *.log
 
 *.dylib
-lab/data/generated/
+**/lab/data/generated/

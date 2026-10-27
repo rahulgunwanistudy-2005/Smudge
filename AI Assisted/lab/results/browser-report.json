@@ -1,0 +1,121 @@
+{
+  "schema": "smudge-report/1",
+  "createdAt": "2026-10-27T02:12:07.871Z",
+  "synthetic": true,
+  "engine": "NBIS mindtct + Bozorth3 \u00b7 smudge-core 1.0",
+  "width": 1000,
+  "height": 720,
+  "referenceKind": "same-image",
+  "threshold": 40,
+  "thresholdCalibrated": false,
+  "prints": [
+    {
+      "before": {
+        "region": {
+          "id": "synthetic-0",
+          "x": 385,
+          "y": 225,
+          "w": 192,
+          "h": 240,
+          "label": "Synthetic print 1",
+          "source": "synthetic"
+        },
+        "highQuality": 16,
+        "coherence": 0.75,
+        "period": 9.067901611328125,
+        "qualityGrade": 3,
+        "exposure": 52,
+        "tier": "High",
+        "score": 197
+      },
+      "after": {
+        "region": {
+          "id": "synthetic-0",
+          "x": 385,
+          "y": 225,
+          "w": 192,
+          "h": 240,
+          "label": "Synthetic print 1",
+          "source": "synthetic"
+        },
+        "highQuality": 0,
+        "coherence": 0.7944444417953491,
+        "period": 4.455090045928955,
+        "qualityGrade": 5,
+        "exposure": 24,
+        "tier": "Low",
+        "score": 0
+      },
+      "attacks": [
+        {
+          "name": "Plain enhancement",
+          "score": 0,
+          "highQuality": 0
+        },
+        {
+          "name": "Re-sharpened",
+          "score": 3,
+          "highQuality": 0
+        },
+        {
+          "name": "2\u00d7 Lanczos",
+          "score": 0,
+          "highQuality": 0
+        },
+        {
+          "name": "4\u00d7 Lanczos",
+          "score": 0,
+          "highQuality": 0
+        },
+        {
+          "name": "JPEG 60",
+          "score": 0,
+          "highQuality": 0
+        },
+        {
+          "name": "JPEG 80",
+          "score": 0,
+          "highQuality": 0
+        },
+        {
+          "name": "JPEG 95",
+          "score": 0,
+          "highQuality": 0
+        },
+        {
+          "name": "Exact exported JPEG",
+          "score": 0,
+          "highQuality": 0
+        }
+      ],
+      "passed": true,
+      "strength": 1,
+      "passes": 3
+    }
+  ],
+  "ssim": 0.9618966643497026,
+  "psnr": 29.447559497296645,
+  "elapsedMs": 15981.5,
+  "metadata": "Original metadata discarded during fresh canvas encoding; export is re-encoded as JPEG.",
+  "limitations": [
+    "Threshold 40 is provisional; no human FMR calibration.",
+    "NFIQ-style grade is a heuristic, not trained NFIQ.",
+    "SourceAFIS validation covers synthetic lab textures only. No human or learned super-resolution validation.",
+    "Only selected regions are processed; automatic detection can miss fingertips.",
+    "Same-image matching, when selected, is a diagnostic, not independent identity verification.",
+    "SSIM and PSNR measure the exact exported JPEG. JPEG recompression changes pixels outside the mask."
+  ],
+  "maskedIdentifiers": 0,
+  "privacy": {
+    "observedExternalRequests": 0,
+    "headers": {
+      "content-security-policy": "default-src 'self'; worker-src 'self' blob:; connect-src 'self'; img-src 'self' blob: data:; object-src 'none'; script-src 'self' 'wasm-unsafe-eval' 'sha256-ssOVKW3BbAGuVQUimMJhshuw84zEAVA+7afIfi047uY='; style-src 'self' 'unsafe-inline'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'",
+      "connection-allowlist": "(response-origin)",
+      "cross-origin-opener-policy": "same-origin",
+      "cross-origin-embedder-policy": "require-corp",
+      "referrer-policy": "no-referrer",
+      "permissions-policy": "geolocation=(), microphone=()"
+    },
+    "offline": false
+  }
+}

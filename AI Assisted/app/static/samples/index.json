@@ -1,0 +1,59 @@
+[
+  {
+    "name": "Ridge study",
+    "url": "/samples/specimen-7.png",
+    "regions": [
+      {
+        "id": "synthetic-0",
+        "x": 385,
+        "y": 225,
+        "w": 192,
+        "h": 240,
+        "label": "Synthetic print 1",
+        "source": "synthetic"
+      }
+    ],
+    "document": false
+  },
+  {
+    "name": "Two print study",
+    "url": "/samples/specimen-19.png",
+    "regions": [
+      {
+        "id": "synthetic-0",
+        "x": 190,
+        "y": 220,
+        "w": 192,
+        "h": 240,
+        "label": "Synthetic print 1",
+        "source": "synthetic"
+      },
+      {
+        "id": "synthetic-1",
+        "x": 555,
+        "y": 200,
+        "w": 192,
+        "h": 240,
+        "label": "Synthetic print 2",
+        "source": "synthetic"
+      }
+    ],
+    "document": false
+  },
+  {
+    "name": "Document specimen",
+    "url": "/samples/specimen-31.png",
+    "regions": [
+      {
+        "id": "synthetic-0",
+        "x": 385,
+        "y": 225,
+        "w": 192,
+        "h": 240,
+        "label": "Synthetic print 1",
+        "source": "synthetic"
+      }
+    ],
+    "document": true
+  }
+]

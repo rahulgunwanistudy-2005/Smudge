@@ -1,0 +1,367 @@
+{
+  "schema": "smudge-evaluation/1",
+  "dataset": "Procedural synthetic ridge textures",
+  "humanData": false,
+  "seedRange": [
+    1,
+    12
+  ],
+  "threshold": 40,
+  "thresholdCalibrated": false,
+  "independentMatcher": false,
+  "learnedSuperResolution": false,
+  "platform": "macOS-26.3-arm64-arm-64bit",
+  "compiler": "native -O3",
+  "samples": [
+    {
+      "seed": 1,
+      "beforeScore": 305,
+      "minutiaeBefore": 32,
+      "highQualityBefore": 14,
+      "coherence": 0.75,
+      "passes": [
+        {
+          "strength": 0.4,
+          "score": 102,
+          "highQuality": 14,
+          "ssim": 0.9171584976200413
+        },
+        {
+          "strength": 0.7,
+          "score": 55,
+          "highQuality": 13,
+          "ssim": 0.6413281038462474
+        },
+        {
+          "strength": 1,
+          "score": 0,
+          "highQuality": 0,
+          "ssim": 0.4077001892325511
+        }
+      ],
+      "elapsedMs": 1810.3690409916453
+    },
+    {
+      "seed": 2,
+      "beforeScore": 207,
+      "minutiaeBefore": 25,
+      "highQualityBefore": 12,
+      "coherence": 0.7666666507720947,
+      "passes": [
+        {
+          "strength": 0.4,
+          "score": 84,
+          "highQuality": 12,
+          "ssim": 0.9182208148264689
+        },
+        {
+          "strength": 0.7,
+          "score": 61,
+          "highQuality": 11,
+          "ssim": 0.6462585514052088
+        },
+        {
+          "strength": 1,
+          "score": 0,
+          "highQuality": 0,
+          "ssim": 0.4110495044269344
+        }
+      ],
+      "elapsedMs": 2588.377207997837
+    },
+    {
+      "seed": 3,
+      "beforeScore": 367,
+      "minutiaeBefore": 33,
+      "highQualityBefore": 15,
+      "coherence": 0.75,
+      "passes": [
+        {
+          "strength": 0.4,
+          "score": 150,
+          "highQuality": 15,
+          "ssim": 0.9166138814669599
+        },
+        {
+          "strength": 0.7,
+          "score": 64,
+          "highQuality": 7,
+          "ssim": 0.6400678034136426
+        },
+        {
+          "strength": 1,
+          "score": 0,
+          "highQuality": 0,
+          "ssim": 0.4077437794782577
+        }
+      ],
+      "elapsedMs": 1553.8442090037279
+    },
+    {
+      "seed": 4,
+      "beforeScore": 391,
+      "minutiaeBefore": 32,
+      "highQualityBefore": 23,
+      "coherence": 0.7555555701255798,
+      "passes": [
+        {
+          "strength": 0.4,
+          "score": 145,
+          "highQuality": 18,
+          "ssim": 0.9154144624293084
+        },
+        {
+          "strength": 0.7,
+          "score": 149,
+          "highQuality": 16,
+          "ssim": 0.635705275556889
+        },
+        {
+          "strength": 1,
+          "score": 0,
+          "highQuality": 0,
+          "ssim": 0.40560635826753316
+        }
+      ],
+      "elapsedMs": 2537.919416994555
+    },
+    {
+      "seed": 5,
+      "beforeScore": 346,
+      "minutiaeBefore": 33,
+      "highQualityBefore": 12,
+      "coherence": 0.7555555701255798,
+      "passes": [
+        {
+          "strength": 0.4,
+          "score": 63,
+          "highQuality": 10,
+          "ssim": 0.9169332482178073
+        },
+        {
+          "strength": 0.7,
+          "score": 32,
+          "highQuality": 7,
+          "ssim": 0.6410420916751308
+        },
+        {
+          "strength": 1,
+          "score": 0,
+          "highQuality": 0,
+          "ssim": 0.4086873857390551
+        }
+      ],
+      "elapsedMs": 2574.2529590061167
+    },
+    {
+      "seed": 6,
+      "beforeScore": 210,
+      "minutiaeBefore": 26,
+      "highQualityBefore": 15,
+      "coherence": 0.7722222208976746,
+      "passes": [
+        {
+          "strength": 0.4,
+          "score": 160,
+          "highQuality": 15,
+          "ssim": 0.9152750861226961
+        },
+        {
+          "strength": 0.7,
+          "score": 97,
+          "highQuality": 9,
+          "ssim": 0.6348750699444877
+        },
+        {
+          "strength": 1,
+          "score": 0,
+          "highQuality": 0,
+          "ssim": 0.405657011557244
+        }
+      ],
+      "elapsedMs": 1943.2419169897912
+    },
+    {
+      "seed": 7,
+      "beforeScore": 197,
+      "minutiaeBefore": 24,
+      "highQualityBefore": 16,
+      "coherence": 0.75,
+      "passes": [
+        {
+          "strength": 0.4,
+          "score": 162,
+          "highQuality": 12,
+          "ssim": 0.9176454498771043
+        },
+        {
+          "strength": 0.7,
+          "score": 60,
+          "highQuality": 11,
+          "ssim": 0.6447192373639902
+        },
+        {
+          "strength": 1,
+          "score": 0,
+          "highQuality": 0,
+          "ssim": 0.41056880444340205
+        }
+      ],
+      "elapsedMs": 1782.8488330123946
+    },
+    {
+      "seed": 8,
+      "beforeScore": 358,
+      "minutiaeBefore": 35,
+      "highQualityBefore": 15,
+      "coherence": 0.7444444298744202,
+      "passes": [
+        {
+          "strength": 0.4,
+          "score": 103,
+          "highQuality": 14,
+          "ssim": 0.9181413941795863
+        },
+        {
+          "strength": 0.7,
+          "score": 97,
+          "highQuality": 12,
+          "ssim": 0.6454274533871507
+        },
+        {
+          "strength": 1,
+          "score": 0,
+          "highQuality": 0,
+          "ssim": 0.40962120645876493
+        }
+      ],
+      "elapsedMs": 1030.2917920053005
+    },
+    {
+      "seed": 9,
+      "beforeScore": 430,
+      "minutiaeBefore": 37,
+      "highQualityBefore": 16,
+      "coherence": 0.7444444298744202,
+      "passes": [
+        {
+          "strength": 0.4,
+          "score": 109,
+          "highQuality": 12,
+          "ssim": 0.9169253066153451
+        },
+        {
+          "strength": 0.7,
+          "score": 91,
+          "highQuality": 9,
+          "ssim": 0.6415281840471543
+        },
+        {
+          "strength": 1,
+          "score": 0,
+          "highQuality": 0,
+          "ssim": 0.409072075599997
+        }
+      ],
+      "elapsedMs": 1422.643041005358
+    },
+    {
+      "seed": 10,
+      "beforeScore": 194,
+      "minutiaeBefore": 25,
+      "highQualityBefore": 16,
+      "coherence": 0.7722222208976746,
+      "passes": [
+        {
+          "strength": 0.4,
+          "score": 94,
+          "highQuality": 12,
+          "ssim": 0.9164376918322328
+        },
+        {
+          "strength": 0.7,
+          "score": 71,
+          "highQuality": 9,
+          "ssim": 0.6399812224843642
+        },
+        {
+          "strength": 1,
+          "score": 0,
+          "highQuality": 0,
+          "ssim": 0.4096898910064967
+        }
+      ],
+      "elapsedMs": 1061.010459001409
+    },
+    {
+      "seed": 11,
+      "beforeScore": 241,
+      "minutiaeBefore": 27,
+      "highQualityBefore": 13,
+      "coherence": 0.7666666507720947,
+      "passes": [
+        {
+          "strength": 0.4,
+          "score": 58,
+          "highQuality": 15,
+          "ssim": 0.9169783605610844
+        },
+        {
+          "strength": 0.7,
+          "score": 134,
+          "highQuality": 13,
+          "ssim": 0.6410798447433473
+        },
+        {
+          "strength": 1,
+          "score": 0,
+          "highQuality": 0,
+          "ssim": 0.4075265878088964
+        }
+      ],
+      "elapsedMs": 970.4185830050847
+    },
+    {
+      "seed": 12,
+      "beforeScore": 273,
+      "minutiaeBefore": 28,
+      "highQualityBefore": 18,
+      "coherence": 0.7722222208976746,
+      "passes": [
+        {
+          "strength": 0.4,
+          "score": 157,
+          "highQuality": 16,
+          "ssim": 0.9163082939305228
+        },
+        {
+          "strength": 0.7,
+          "score": 86,
+          "highQuality": 18,
+          "ssim": 0.6380459871734008
+        },
+        {
+          "strength": 1,
+          "score": 0,
+          "highQuality": 1,
+          "ssim": 0.4058133159447907
+        }
+      ],
+      "elapsedMs": 799.8251249955501
+    }
+  ],
+  "summary": {
+    "sampleCount": 12,
+    "baselineMatches": 12,
+    "afterMatches": 0,
+    "meanRoiSSIM": 0.40822800916366025,
+    "meanElapsedMs": 1672.920215334064
+  },
+  "limitations": [
+    "Synthetic smoke test only; no human efficacy or FMR claims.",
+    "Same-image baseline, not independent enrolment.",
+    "Results cover native plain enhancement; browser reports include the additional attacker variants.",
+    "ROI SSIM differs from full-image SSIM.",
+    "Distance, LPIPS, SourceAFIS, real-device budgets and blind testing are unmeasured."
+  ]
+}

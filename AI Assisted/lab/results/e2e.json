@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "externalRequests": 0,
+  "browserErrors": [],
+  "tested": [
+    "synthetic closed loop",
+    "exact exported JPEG",
+    "report without minutiae",
+    "metadata-free download",
+    "offline reload and full flow",
+    "local MediaPipe startup",
+    "no-reference fallback",
+    "multipage PDF",
+    "local OCR",
+    "390px layout",
+    "dark theme"
+  ],
+  "accessibilityViolations": [
+    {
+      "id": "aria-prohibited-attr",
+      "impact": "serious",
+      "nodes": 1
+    }
+  ]
+}

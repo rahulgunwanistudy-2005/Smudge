@@ -1,0 +1,19 @@
+NIST Biometric Image Software (NBIS) — mindtct and bozorth3
+============================================================
+
+The C sources in mindtct/, bozorth3/ and include/ were written by the U.S.
+National Institute of Standards and Technology. NBIS is public-domain
+software (see the header of each file for NIST's disclaimer).
+
+Provenance of this copy:
+  - Taken from the libfprint 1.94.7 source package (Ubuntu noble,
+    libfprint_1.94.7+tod1-0ubuntu5~24.04.9), directory libfprint/nbis/.
+  - libfprint's maintainers renamed a few globals (g_ prefix), replaced
+    malloc/free with glib calls and applied small fixes (see
+    update-from-nbis.sh). libfprint is distributed under LGPL-2.1-or-later; retain attribution
+    for its adaptations. Individual NBIS source files retain NIST public-domain
+    notices. Smudge does not claim ownership of either.
+  - Smudge replaces glib with shim/glib.h (a dozen macros) so the code
+    compiles to WebAssembly without glib. No algorithmic changes.
+
+Upstream: https://www.nist.gov/services-resources/software/nist-biometric-image-software-nbis

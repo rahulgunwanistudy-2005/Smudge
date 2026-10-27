@@ -1,0 +1,57 @@
+[
+  {
+    "path": "models/eng.traineddata.gz",
+    "bytes": 10923060,
+    "sha256": "ed350f3752f81ee8f38769edc14d92d997dababe23b565c59879372cc46a2468"
+  },
+  {
+    "path": "models/hand_landmarker.task",
+    "bytes": 7819105,
+    "sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1"
+  },
+  {
+    "path": "models/ocr-core/LICENSE",
+    "bytes": 11358,
+    "sha256": "c6596eb7be8581c18be736c846fb9173b69eccf6ef94c5135893ec56bd92ba08"
+  },
+  {
+    "path": "models/ocr-core/tesseract-core-lstm.wasm.js",
+    "bytes": 3954181,
+    "sha256": "775a35df6f2ae100e02609443e6bd5cafcd07983dd6175454ca4a432a7730687"
+  },
+  {
+    "path": "models/ocr-core/tesseract-core-simd-lstm.wasm.js",
+    "bytes": 3954569,
+    "sha256": "9d7c43fb206dc9f48475228b46bf35f888fa9e6259da2e67d5a75c77049f2dc7"
+  },
+  {
+    "path": "models/ocr-worker.js",
+    "bytes": 111162,
+    "sha256": "38645599043239c0eb6db08a6504a92dcdc292200535f3e9339cd77c4443b842"
+  },
+  {
+    "path": "models/pdf.worker.min.mjs",
+    "bytes": 1264342,
+    "sha256": "9536359f1b8367850d485731ca1d5e45c159a7b7a0912325e539937aa21ceb18"
+  },
+  {
+    "path": "models/vision/vision_wasm_internal.js",
+    "bytes": 204816,
+    "sha256": "6f6b86509cf9e163ea1cfec7edc8cf53732699c04781e4c21c557c1ba402310e"
+  },
+  {
+    "path": "models/vision/vision_wasm_internal.wasm",
+    "bytes": 11453626,
+    "sha256": "cb3ec20026a9aecc2a81a93c25630ceb5389297ddb7a5f0bd61dd09cde606b9b"
+  },
+  {
+    "path": "models/vision/vision_wasm_nosimd_internal.js",
+    "bytes": 204669,
+    "sha256": "9f8fc960e363f0fb2f42f7937b97ae9cf9a5630490f71031fa90caa9bb121938"
+  },
+  {
+    "path": "models/vision/vision_wasm_nosimd_internal.wasm",
+    "bytes": 10647962,
+    "sha256": "924274fcd5ac8985f6570a8573e7971b7bd2d580ba1b8f3beb0ba8f95db6347c"
+  }
+]
