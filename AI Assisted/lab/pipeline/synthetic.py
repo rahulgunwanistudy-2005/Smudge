@@ -26,5 +26,5 @@ def write_samples(root):
   for i,(x,y) in enumerate(positions):
    im=specimen(seed+i);rgb=np.stack([im,im,im],axis=2);canvas.paste(Image.fromarray(rgb),(x,y));regions.append({'id':f'synthetic-{i}','x':x,'y':y,'w':192,'h':240,'label':f'Synthetic print {i+1}','source':'synthetic'})
   draw.text((44,665),'Procedural texture. No human biometrics. Results are not clinical evidence.',fill=(66,89,72))
-  filename=f'specimen-{seed}.png';canvas.save(root/filename);meta.append({'name':name,'url':'/samples/'+filename,'regions':regions,'document':doc})
+  filename=f'specimen-{seed}.png';canvas.save(root/filename);thumb=canvas.copy();thumb.thumbnail((240,173));thumbname=f'specimen-{seed}-thumb.webp';thumb.save(root/thumbname,'WEBP',quality=76);meta.append({'name':name,'url':'/samples/'+filename,'thumbnail':'/samples/'+thumbname,'regions':regions,'document':doc})
  return meta

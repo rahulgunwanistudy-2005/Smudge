@@ -2,6 +2,8 @@
   "status": "passed",
   "externalRequests": 0,
   "browserErrors": [],
+  "browser": "156.0.8078.4",
+  "origin": "https://smudge-privacy.onrender.com",
   "tested": [
     "synthetic closed loop",
     "exact exported JPEG",
@@ -15,11 +17,5 @@
     "390px layout",
     "dark theme"
   ],
-  "accessibilityViolations": [
-    {
-      "id": "aria-prohibited-attr",
-      "impact": "serious",
-      "nodes": 1
-    }
-  ]
+  "accessibilityViolations": []
 }

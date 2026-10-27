@@ -3,7 +3,7 @@ from playwright.sync_api import sync_playwright,expect
 from pathlib import Path
 from PIL import Image,ImageDraw,ImageFont
 import json,os,sys,time
-ROOT=Path(__file__).resolve().parents[1];REPO=ROOT.parent;BASE=os.environ.get('SMUDGE_URL','http://127.0.0.1:4318');OUT=ROOT/'docs/screenshots';OUT.mkdir(parents=True,exist_ok=True)
+ROOT=Path(__file__).resolve().parents[1];REPO=ROOT.parent;BASE=os.environ.get('SMUDGE_URL','http://127.0.0.1:4318');OUT=Path(os.environ.get('SMUDGE_EVIDENCE_DIR',str(ROOT/'docs/screenshots')));OUT.mkdir(parents=True,exist_ok=True)
 
 def scan_and_smudge(page):
  page.get_by_role('button',name='Analyse 1 print',exact=False).click();page.get_by_role('button',name='Smudge selected prints').wait_for(timeout=90000)
@@ -15,9 +15,9 @@ def scan_and_smudge(page):
 with sync_playwright() as p:
  browser=p.chromium.launch(headless=True);ctx=browser.new_context(viewport={'width':1440,'height':1000},accept_downloads=True);page=ctx.new_page();errors=[];external=[];methods=[]
  page.on('pageerror',lambda e:errors.append(str(e)))
- page.on('request',lambda r:external.append(r.url) if r.url.startswith('http') and not r.url.startswith(BASE+'/') else None)
- page.on('request',lambda r:methods.append(r.method))
- page.goto(BASE);page.wait_for_load_state('networkidle');expect(page.get_by_role('heading',name='Some things are yours to keep.')).to_be_visible();page.screenshot(path=str(OUT/'dashboard.png'),full_page=True)
+ ctx.on('request',lambda r:external.append(r.url) if r.url.startswith('http') and not r.url.startswith(BASE+'/') else None)
+ ctx.on('request',lambda r:methods.append(r.method))
+ response=page.goto(BASE);assert response.header_value('connection-allowlist')=='(response-origin)','Missing connection policy header';assert response.header_value('content-security-policy'),'Missing CSP header';page.wait_for_load_state('networkidle');expect(page.get_by_role('heading',name='Some things are yours to keep.')).to_be_visible();page.screenshot(path=str(OUT/'dashboard.png'),full_page=True)
  page.get_by_role('button',name='Ridge study',exact=False).click();scan_and_smudge(page);page.screenshot(path=str(OUT/'result.png'),full_page=True)
  with page.expect_download() as got:page.get_by_role('button',name='Report',exact=True).click()
  data=json.loads(Path(got.value.path()).read_text());assert data['schema']=='smudge-report/1' and data['thresholdCalibrated'] is False and data['synthetic'] is True
@@ -49,5 +49,5 @@ with sync_playwright() as p:
  print('ACCESSIBILITY',json.dumps(violations),flush=True);assert not violations,f'Accessibility violations: {violations}'
  (ROOT/'lab/results/accessibility.json').write_text(json.dumps({'automatedOnly':True,'violations':violations},indent=2)+'\n')
  mobile=browser.new_context(viewport={'width':390,'height':844},is_mobile=True,device_scale_factor=1);mp=mobile.new_page();mp.goto(BASE);mp.wait_for_load_state('networkidle');assert mp.evaluate('document.documentElement.scrollWidth<=innerWidth');mp.screenshot(path=str(OUT/'mobile.png'),full_page=True);mp.get_by_role('button',name='Switch to dark theme').click();mp.screenshot(path=str(OUT/'mobile-dark.png'),full_page=True)
- result={'status':'passed','externalRequests':len(external),'browserErrors':errors,'tested':['synthetic closed loop','exact exported JPEG','report without minutiae','metadata-free download','offline reload and full flow','local MediaPipe startup','no-reference fallback','multipage PDF','local OCR','390px layout','dark theme'],'accessibilityViolations':violations}
+ result={'status':'passed','externalRequests':len(external),'browserErrors':errors,'browser':browser.version,'origin':BASE,'tested':['synthetic closed loop','exact exported JPEG','report without minutiae','metadata-free download','offline reload and full flow','local MediaPipe startup','no-reference fallback','multipage PDF','local OCR','390px layout','dark theme'],'accessibilityViolations':violations}
  (ROOT/'lab/results/e2e.json').write_text(json.dumps(result,indent=2)+'\n');browser.close();print(json.dumps(result,indent=2),flush=True)

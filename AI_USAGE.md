@@ -6,7 +6,7 @@ Every project-owned deliverable belongs to exactly one requested category: **Han
 
 | Work | Category | Basis |
 |---|---|---|
-| Product requirements and Vizo reference choice supplied in this session | Hand Written | Human-provided direction; original attachment stays outside the repository. |
+| User direction in `Hand Written/PROJECT_DIRECTION.md` and Vizo reference choice | Hand Written | Human-provided chat direction, transcribed with whitespace normalized and URL tracking removed. The longer pasted attachment stays outside Git; its original authorship is not independently verified. |
 | Application, styles, SVG artwork, icons and worker integrations | AI Assisted | Implemented by the coding assistant under the builder's direction. |
 | Native core, NBIS adaptation, TypeScript engine and tests | AI Assisted | Written or adapted by the coding assistant. NIST algorithms are third-party. |
 | Synthetic specimens, evaluation scripts and committed result JSON | AI Assisted | Script-generated; not human biometrics or real-world efficacy evidence. |

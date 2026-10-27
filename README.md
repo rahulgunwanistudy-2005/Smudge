@@ -99,17 +99,17 @@ CI rebuilds native/WASM, checks exact parity, builds the PWA, checks the bundle 
 |---|---|
 | Native ↔ WASM XYT, reliability and self-score parity | 50/50 exact fixtures |
 | Native plain baseline → after,12 textures | 12/12 → 0/12 accepted |
-| SourceAFIS baseline → post-treatment variants | 12/12 → 0/84 accepted |
-| Bozorth3 baseline → same post-treatment variants | 12/12 → 0/84 accepted |
+| SourceAFIS baseline → post-treatment variants | 12/12 → 0/96 accepted |
+| Bozorth3 baseline → same post-treatment variants | 12/12 → 0/96 accepted |
 | Synthetic impostor pairs, each matcher | 0/66 accepted at provisional40 |
 
 Sources: [synthetic JSON](AI%20Assisted/lab/results/synthetic.json), [independent JSON](AI%20Assisted/lab/results/independent.json), [methods and limits](AI%20Assisted/docs/evaluation.md). A browser report and test artifacts are committed alongside them. Twelve procedural textures and66 impostor pairs **do not** calibrate a human FMR. The two matchers have different score scales.
 
-The self-hosted model/runtime set is approximately **48.2MiB**, plus the small fingerprint core, detector bundle and fonts. Exact file sizes and SHA-256 checksums: [asset manifest](AI%20Assisted/docs/asset-manifest.json). The initial route’s JavaScript budget is150KiB gzip; [measured budget](AI%20Assisted/lab/results/bundle-budget.json) distinguishes initial code from offline asset prefetch.
+The self-hosted model/runtime set is approximately **48.2MiB**, plus the small fingerprint core, detector bundle and fonts. Exact file sizes and SHA-256 checksums: [asset manifest](AI%20Assisted/docs/asset-manifest.json). The final local simulated-mobile Lighthouse run scored **98 Performance /100 Accessibility /100 Best Practices** ([recorded report](AI%20Assisted/lab/results/lighthouse-summary.json)). This does not measure a real phone. The initial route’s JavaScript budget is150KiB gzip; [measured budget](AI%20Assisted/lab/results/bundle-budget.json) distinguishes initial code from offline asset prefetch.
 
 ## Limits you should know
 
-The line40 is provisional, not calibrated at FMR0.1%. The quality grade is **NFIQ-style**, not trained NFIQ. Human contactless efficacy, detection recall/precision, capture-distance performance, learned super-resolution, LPIPS, blind A/B testing and phone latency are unmeasured. Strong treatment can visibly blur a close-up. The synthetic ROI SSIM is about0.408; full-photo similarity is a different metric and must not hide that tradeoff.
+The line40 is provisional, not calibrated at FMR0.1%. The quality grade is **NFIQ-style**, not trained NFIQ. Human contactless efficacy, detection recall/precision, capture-distance performance, human validation against learned super-resolution, LPIPS, blind A/B testing and phone latency are unmeasured. Strong treatment can visibly blur a close-up. The synthetic ROI SSIM is about0.408; full-photo similarity is a different metric and must not hide that tradeoff.
 
 Automatic suggestions can miss a finger or include the wrong side. DPI defaults to500 and physical contactless scale is not calibrated. Review regions manually. HEIC depends on native browser decoding; convert to JPEG when unsupported. PDFs are processed/exported **one page at a time as JPEG**. Export quality is fixed0.95, not estimated from the input. WebGPU, multithreading, identity replacement and institution batch processing are not implemented.
 

@@ -1,11 +1,12 @@
 {
   "schema": "smudge-budget/1",
-  "initialJavaScriptGzipBytes": 46317,
+  "initialJavaScriptGzipBytes": 45883,
   "budgetBytes": 153600,
   "passed": true,
   "method": "Vite entry and initial route dependency closure; excludes lazy PDF/OCR/model assets and service-worker prefetch.",
-  "allStaticBytes": 52002550,
+  "allStaticBytes": 64303545,
   "modelsBytes": 50548850,
+  "modelsOnDiskIncludingBrotliBytes": 59157283,
   "wasmCoreBytes": 128967,
   "realDeviceLatency": "Unmeasured; target budgets are not claimed."
 }

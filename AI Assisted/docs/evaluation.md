@@ -4,7 +4,7 @@ All results are under `../lab/results/`. The app reads copies of synthetic and i
 
 ## Methods
 
-`make eval` compiles the shared native core, evaluates twelve deterministic 192×240 ridge-like textures (seeds1–12), tries strengths0.4/0.7/1, records actual NIST mindtct points, Bozorth3 scores and ROI SSIM, and asserts exact zero-mask preservation. It also generates fifty native/WASM parity fixtures (seeds1–50). The independent experiment uses fixed strength1, SourceAFIS3.18.1 plus Bozorth3, seven after variants per sample, and all66 unordered synthetic impostor pairs.
+`make eval` compiles the shared native core, evaluates twelve deterministic 192×240 ridge-like textures (seeds1–12), tries strengths0.4/0.7/1, records actual NIST mindtct points, Bozorth3 scores and ROI SSIM, and asserts exact zero-mask preservation. It also generates fifty native/WASM parity fixtures (seeds1–50). The independent experiment uses fixed strength1, SourceAFIS3.18.1 plus Bozorth3, eight after variants per sample, and all66 unordered synthetic impostor pairs. The eighth after variant is a learned ESPCN4x upscaler (Apache2.0, OpenCV GSoC model; exact graph SHA256 in independent.json).
 
 The browser uses a closed loop of three strengths. It tests plain enhancement, re-sharpening, 2×/4× Lanczos (capped at1024), JPEG60/80/95, then the exact exported full-image JPEG. Every tested after score must be<40 and every reliable count<6. A baseline must match first for a diagnostic pass. Without independent enrolment, the UI either shows no biometric score (uploads) or a labelled same-image baseline (procedural examples). Scores from different matchers are not numerically interchangeable.
 
@@ -13,8 +13,8 @@ The browser uses a closed loop of three strengths. It tests plain enhancement, r
 | Experiment | Before | After | Meaning |
 |---|---|---|---|
 | Native closed-loop plain matcher,12 textures | 12/12 matches | 0/12 matches | Same-image diagnostic only |
-| Independent SourceAFIS, fixed strength1 | 12/12 matches | 0/84 attacker matches | Independent extractor on the same synthetic generator |
-| NBIS Bozorth3, same independent experiment | 12/12 matches | 0/84 attacker matches | Seven after variants per texture |
+| Independent SourceAFIS, fixed strength1 | 12/12 matches | 0/96 attacker matches | Independent extractor on the same synthetic generator |
+| NBIS Bozorth3, same independent experiment | 12/12 matches | 0/96 attacker matches | Eight after variants per texture |
 | Synthetic impostor pairs, each matcher | — | 0/66 above40 | Too few and too artificial for a population FMR claim |
 | Native ↔ WASM parity | 50 inputs | exact XYT/reliability and self-match scores | Test runner asserts equality |
 
@@ -32,4 +32,8 @@ Gaussian local SSIM uses11×11 windows, sigma1.5. Images above262,144 pixels sam
 
 ## Limitations
 
-No consenting human study, contactless distance curve, detection recall/precision, human genuine/impostor calibration, LPIPS, blind A/B study, learned SR, trained NFIQ1 or biometric sensor spoof test. Default ROI DPI is500; physical contactless scale is not inferred. Photo suggestions use conservative axis-aligned boxes; document detection uses directional texture and needs review. OCR can miss or misread numbers, and a checksum is not identity verification. Fixed JPEG export quality0.95 is not input-quality estimation. HEIC uses native browser support when available; otherwise the user must convert to JPEG. PDFs export one chosen page as JPEG; preserving whole PDF structure is not implemented. WebGPU, multithreaded core, identity replacement and batch processing are not shipped.
+No consenting human study, contactless distance curve, detection recall/precision, human genuine/impostor calibration, LPIPS, blind A/B study, trained NFIQ1 or biometric sensor spoof test. Default ROI DPI is500; physical contactless scale is not inferred. Photo suggestions use conservative axis-aligned boxes; document detection uses directional texture and needs review. OCR can miss or misread numbers, and a checksum is not identity verification. Fixed JPEG export quality0.95 is not input-quality estimation. HEIC uses native browser support when available; otherwise the user must convert to JPEG. PDFs export one chosen page as JPEG; preserving whole PDF structure is not implemented. WebGPU, multithreaded core, identity replacement and batch processing are not shipped.
+
+## Recorded frontend audit
+
+Lighthouse13.5.0, local production server with Brotli, mobile simulation:98 Performance,100 Accessibility,100 Best Practices. Full JSON and a compact summary are committed. Initial delivery was improved by moving ornamental SVG out of server HTML, serving tiny WebP specimen previews, and precompressing assets. This audit does not measure the CPU-heavy scan itself or a real phone. Reproduce with `node 'AI Assisted/scripts/audit-lighthouse.mjs'` while the production preview is running; set CHROME_PATH to an installed Chrome executable when required.

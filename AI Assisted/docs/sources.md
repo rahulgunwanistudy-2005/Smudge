@@ -1,6 +1,6 @@
 # Sources (verified 2026-10-25)
 
-Each item below was opened and read. The "Why this matters" screen links to the same URLs.
+This table was inherited from the initial scaffold. The current build re-verified the Vizo palette, competition deadline/requirements, Connection Allowlist syntax, SourceAFIS documentation, CCC2014 announcement, current SvelteKit migration, and Render deployment docs. Other historical entries below remain carried-forward references; they are not presented as newly re-verified claims in the UI. The "Why this matters" screen links to the same URLs.
 
 | Year | Claim used in the app | Source |
 |---|---|---|
@@ -28,3 +28,12 @@ Each item below was opened and read. The "Why this matters" screen links to the 
 | Malhotra et al., "On privacy preserving anonymization of finger-selfies", CVPRW 2020 | https://mlanthology.org/cvprw/2020/malhotra2020cvprw-privacy/ |
 | Perceptual noise injection against fingerprint extraction (IEEE TIP 2024, arXiv 2208.10688) | https://arxiv.org/html/2208.10688 |
 | "Privacy-Aware Fingerprint Exposure Detection in Photographs" (Zenodo) | https://zenodo.org/records/22049886 |
+
+## Current build additions
+
+- SvelteKit3 migration: https://svelte.dev/docs/kit/migrating-to-sveltekit-3
+- SourceAFIS Java API/licence: https://sourceafis.machinezoo.com/java
+- ESPCN source/model/licence: https://github.com/fannymonori/TF-ESPCN (downloaded model and Apache2.0 licence; graph hash in independent.json).
+- OpenCV DNN super-resolution API: https://docs.opencv.org/4.13.0/d9/de0/group__dnn__superres.html
+- Render current plans/free hosting/deploy lifecycle: https://render.com/docs/compute-plans ; https://render.com/docs/free ; https://render.com/docs/deploys
+- Corrected and verified CVF workshop landing page (workshop1, not workshop48): https://openaccess.thecvf.com/content_CVPRW_2020/html/w1/Malhotra_On_Privacy_Preserving_Anonymization_of_Finger-Selfies_CVPRW_2020_paper.html . The paper studies adversarial anonymization; Smudge uses a distinct signal-suppression prototype and does not claim original invention of this problem.

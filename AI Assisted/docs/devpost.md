@@ -22,7 +22,7 @@ MediaPipe, PDF.js, Tesseract, WASM and fonts are self-hosted. There is no photo-
 
 ## What we measured
 
-Fifty synthetic fixtures return identical native/WASM minutiae, reliability and self-match scores. Twelve procedural ridge textures match their own baselines before treatment; none matches afterward under the native plain test. A separate experiment with NIST Bozorth3 and independent SourceAFIS has12/12 accepted baselines and0/84 accepted post-treatment attacker comparisons for each matcher. All raw scores and generation scripts are committed.
+Fifty synthetic fixtures return identical native/WASM minutiae, reliability and self-match scores. Twelve procedural ridge textures match their own baselines before treatment; none matches afterward under the native plain test. A separate experiment with NIST Bozorth3 and independent SourceAFIS has12/12 accepted baselines and0/96 accepted post-treatment attacker comparisons for each matcher. All raw scores and generation scripts are committed.
 
 **These are synthetic, same-image diagnostics, not validated protection for real human fingerprints.** Threshold40 is provisional and not calibrated at a0.1% false match rate. Strong treatment changes ridge close-ups visibly; the mean synthetic ROI SSIM is about0.408. Full-photo similarity is reported separately on the exact JPEG and must not conceal the close-up tradeoff.
 
@@ -36,11 +36,11 @@ An absence of a match is evidence about a specific comparator and input, not a u
 
 ## What is incomplete
 
-No consenting human contactless dataset, calibrated FMR, measured detection recall/precision, distance chart, learned super-resolution attack, trained NFIQ, LPIPS, blind A/B test or real-phone latency validation. The quality grade is NFIQ-style. Contactless DPI is not calibrated. Region suggestions are conservative axis-aligned boxes, and document candidates use directional texture. Unsupported HEIC requires conversion. PDF export is one selected page as JPEG. Identity replacement, WebGPU, multithreaded core and institutional batch processing are not implemented.
+No consenting human contactless dataset, calibrated FMR, measured detection recall/precision, distance chart, human learned-super-resolution validation, trained NFIQ, LPIPS, blind A/B test or real-phone latency validation. The quality grade is NFIQ-style. Contactless DPI is not calibrated. Region suggestions are conservative axis-aligned boxes, and document candidates use directional texture. Unsupported HEIC requires conversion. PDF export is one selected page as JPEG. Identity replacement, WebGPU, multithreaded core and institutional batch processing are not implemented.
 
 ## What is next
 
-Collect an ethically consented contactless dataset, calibrate both matchers, add learned-upscale tests, and improve perceptual quality against those stronger checks before making efficacy claims.
+Collect an ethically consented contactless dataset, calibrate both matchers, expand learned-upscale tests, and improve perceptual quality against those stronger checks before making efficacy claims.
 
 ## Credits and work disclosure
 

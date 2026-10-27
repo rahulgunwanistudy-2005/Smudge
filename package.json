@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "dev": "npm run dev -w smudge-app -- --host 127.0.0.1",
-    "build": "npm run build:detector && npm run build -w smudge-app && node 'AI Assisted/scripts/security-headers.mjs'",
+    "build": "npm run build:detector && npm run build -w smudge-app && node 'AI Assisted/scripts/security-headers.mjs' && node 'AI Assisted/scripts/compress-assets.mjs'",
     "preview": "node 'AI Assisted/scripts/serve.mjs'",
     "check": "npm run check -w smudge-app",
     "test": "vitest run",

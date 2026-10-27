@@ -7,7 +7,7 @@
 - [x] Screenshot capture script and submission text.
 - [ ] Consented real human dataset and human efficacy / distance / perceptual validation.
 - [ ] Real Android/iOS tests and measured device budgets.
-- [ ] Learned super-resolution attack, trained NFIQ, human FMR calibration.
+- [ ] Human validation against learned super-resolution, trained NFIQ, human FMR calibration.
 - [ ] Builder review of the final demo/video, provenance and competition eligibility.
 - [ ] Public video link accepted by Devpost.
 - [ ] Final Devpost submit click by the builder.

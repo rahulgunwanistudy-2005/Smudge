@@ -14,6 +14,6 @@ Ordinary images, references, ROIs and minutiae are held in browser memory. Reloa
 
 ## Out of scope / not validated
 
-No calibrated human false-match rate; no proof against all matchers; no learned super-resolution attack; no spoofing/liveness/sensor assessment; no guarantee that detection finds all hands, distinguishes palm reliably, or works at every capture distance. Compromised browser, extensions, OS, screen recording, local storage access and arbitrary side channels are outside the boundary.
+No calibrated human false-match rate; no proof against all matchers; learned ESPCN attacks validated only on synthetic lab textures; no spoofing/liveness/sensor assessment; no guarantee that detection finds all hands, distinguishes palm reliably, or works at every capture distance. Compromised browser, extensions, OS, screen recording, local storage access and arbitrary side channels are outside the boundary.
 
 Image quality may change visibly. A low score can reflect bad capture or no detected minutiae. A pass requires an accepted baseline, every tested after score below the provisional line, and fewer than six reliable after points. This test does not establish that a real attacker cannot recover identity. If verification fails, crop or retake.

@@ -11,8 +11,10 @@ Use only the labelled procedural specimen. If replacing it with a real hand phot
 | 1:05–1:22 | Privacy proof | Photos stay on this device. These are the actual response policies and observed external resources. The counter is an audit aid, not a universal network attestation. |
 | 1:22–1:37 | Offline reload and scan | After the app and self-hosted models are cached, reload offline and the same workflow still runs. |
 | 1:37–1:53 | Lab, independent matcher panel | Fifty native/WASM fixtures agree. Two independent matchers pass the synthetic smoke checks. This is not human efficacy or calibrated FMR. |
-| 1:53–2:10 | Documents and limitations | Document OCR runs locally and requires review. Human consented validation, learned-super-resolution tests and real-phone measurements remain open. Smudge is a working defensive prototype with inspectable evidence. |
+| 1:53–2:10 | Documents and limitations | Document OCR runs locally and requires review. Human consented validation and real-phone measurements remain open. Learned ESPCN4× is tested on synthetic textures only. Smudge is a working defensive prototype with inspectable evidence. |
 
 End card: You can’t reset a fingerprint. You can share less of it.
 
 The source classification is in AI_USAGE.md. The final public video and Devpost submit action require the builder's review. Record1080p or higher and keep on-screen synthetic/limitations captions visible. A real-device gallery Share Target demonstration is not represented by a desktop browser recording.
+
+The recorded version is approximately135seconds at1920×1080, with burned-in captions and local system-generated narration. The recording shows actual processing, including a second run with Playwright network disabled. It does not show a real phone gallery Share Target or human capture.

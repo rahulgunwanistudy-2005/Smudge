@@ -1,0 +1,13 @@
+{
+  "url": "http://127.0.0.1:4318/",
+  "fetchTime": "2026-10-27T02:33:08.190Z",
+  "lighthouseVersion": "13.5.0",
+  "formFactor": "mobile",
+  "scores": {
+    "performance": 98,
+    "accessibility": 100,
+    "best-practices": 100
+  },
+  "simulatedMobile": true,
+  "realDevice": false
+}

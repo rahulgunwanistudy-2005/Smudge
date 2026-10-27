@@ -1,6 +1,6 @@
 {
   "schema": "smudge-report/1",
-  "createdAt": "2026-10-27T02:12:07.871Z",
+  "createdAt": "2026-10-27T02:23:20.767Z",
   "synthetic": true,
   "engine": "NBIS mindtct + Bozorth3 \u00b7 smudge-core 1.0",
   "width": 1000,
@@ -95,7 +95,7 @@
   ],
   "ssim": 0.9618966643497026,
   "psnr": 29.447559497296645,
-  "elapsedMs": 15981.5,
+  "elapsedMs": 52669.965000003576,
   "metadata": "Original metadata discarded during fresh canvas encoding; export is re-encoded as JPEG.",
   "limitations": [
     "Threshold 40 is provisional; no human FMR calibration.",
@@ -109,7 +109,7 @@
   "privacy": {
     "observedExternalRequests": 0,
     "headers": {
-      "content-security-policy": "default-src 'self'; worker-src 'self' blob:; connect-src 'self'; img-src 'self' blob: data:; object-src 'none'; script-src 'self' 'wasm-unsafe-eval' 'sha256-ssOVKW3BbAGuVQUimMJhshuw84zEAVA+7afIfi047uY='; style-src 'self' 'unsafe-inline'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'",
+      "content-security-policy": "default-src 'self'; worker-src 'self' blob:; connect-src 'self'; img-src 'self' blob: data:; object-src 'none'; script-src 'self' 'wasm-unsafe-eval' 'sha256-X23+xIPd/CW15Q7OlzzWzqdlsvD6GYQiCBYfijtW/mE='; style-src 'self' 'unsafe-inline'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'",
       "connection-allowlist": "(response-origin)",
       "cross-origin-opener-policy": "same-origin",
       "cross-origin-embedder-policy": "require-corp",

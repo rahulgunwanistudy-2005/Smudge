@@ -11,3 +11,5 @@
 - AI tool use and human contribution: root `AI_USAGE.md` and the `Hand Written` / `AI Assisted` folders. No human review is asserted by the assistant.
 
 App-local dependency notices are preserved in `app/static/licenses/`. Model and runtime checksums are listed in `asset-manifest.json`. Third-party authorship is distinct from the requested work categories.
+
+- Learned lab attacker: Fanny Monori / TF-ESPCN, OpenCV GSoC2019, Apache2.0. The100,323-byte graph and licence are retained under lab/models; the committed independent JSON records its SHA256. General image upscaling is not fingerprint-specific recovery. https://github.com/fannymonori/TF-ESPCN

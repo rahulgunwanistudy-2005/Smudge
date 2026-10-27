@@ -1,10 +1,4 @@
 {
   "automatedOnly": true,
-  "violations": [
-    {
-      "id": "aria-prohibited-attr",
-      "impact": "serious",
-      "nodes": 1
-    }
-  ]
+  "violations": []
 }
