@@ -1,0 +1,1 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"><modelVersion>4.0.0</modelVersion><groupId>org.smudge</groupId><artifactId>smudge-lab</artifactId><version>1.0.0</version><dependencies><dependency><groupId>com.machinezoo.sourceafis</groupId><artifactId>sourceafis</artifactId><version>3.18.1</version></dependency></dependencies></project>

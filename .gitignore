@@ -20,3 +20,6 @@ playwright-report/
 .lighthouseci/
 .DS_Store
 *.log
+
+*.dylib
+lab/data/generated/

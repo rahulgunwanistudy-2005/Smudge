@@ -28,7 +28,7 @@ int sm_mindtct(const uint8_t *img, int w, int h, float ppi, SmMinutia *out,
   int bw, bh, bd;
   double ppmm = (ppi > 0 ? ppi : SM_WORK_PPI) / 25.4;
 
-  if (w < 64 || h < 64) return -1;
+  if (!img || !out || w < 64 || h < 64 || w > 4096 || h > 4096 || max_out < 1) return -1;
 
   /* get_minutiae may modify its input; work on a copy. */
   unsigned char *copy = (unsigned char *)malloc((size_t)w * h);
@@ -100,7 +100,14 @@ static void load_xyt(const int *xytq, int n, struct xyt_struct *s) {
   int keep = n;
   if (n > max_minutiae) {
     for (int i = 0; i < n; i++) quality[i] = xytq[i * 4 + 3];
-    sort_order_decreasing(quality, n, order);
+    /* Stable descending reliability order; NBIS loader keeps the top 150. */
+    for (int i = 0; i < n; i++) {
+      int j = i;
+      while (j > 0 && quality[order[j - 1]] < quality[i]) {
+        order[j] = order[j - 1]; j--;
+      }
+      order[j] = i;
+    }
     keep = max_minutiae;
   } else {
     for (int i = 0; i < n; i++) order[i] = i;
@@ -124,6 +131,7 @@ static void load_xyt(const int *xytq, int n, struct xyt_struct *s) {
 
 int sm_bozorth(const int *probe_xytq, int np, const int *gallery_xytq,
                int ng) {
+  if (!probe_xytq || !gallery_xytq || np < 0 || ng < 0) return 0;
   static struct xyt_struct p, g;
   load_xyt(probe_xytq, np, &p);
   load_xyt(gallery_xytq, ng, &g);
